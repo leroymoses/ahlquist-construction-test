@@ -66,11 +66,21 @@ nav { position: sticky; top: 0; z-index: 50; background: rgba(234, 246, 255, 0.9
   gap: 6px;
 }
 .badge svg { width: 12px; height: 12px; }
+.badge-large {
+  font-size: 1rem;
+  padding: 13px 26px;
+  border-width: 2px;
+  gap: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.badge-large svg { width: 18px; height: 18px; }
 
 /* HERO (home) */
 .hero { position: relative; padding: 90px 32px 70px; text-align: center; overflow: hidden; }
 .hero .wrap { position: relative; z-index: 1; }
 .sky-decor { position: absolute; top: 0; left: 0; width: 100%; height: 320px; z-index: 0; pointer-events: none; }
+.flag-decor { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 105%; max-width: 1150px; height: auto; opacity: 0.07; z-index: 0; pointer-events: none; }
 .cloud { fill: #ffffff; opacity: 0.9; }
 .cloud-soft { opacity: 0.6; }
 @media (max-width: 780px) { .sky-decor { opacity: 0.6; } }
