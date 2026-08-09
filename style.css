@@ -92,7 +92,9 @@ nav { position: sticky; top: 0; z-index: 50; background: rgba(234, 246, 255, 0.9
 .hero-ctas { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 60px; }
 
 /* PAGE HERO (service subpages, smaller/left-aligned) */
-.page-hero { padding: 74px 32px 56px; border-bottom: 1px solid var(--line); background: var(--bg-section); }
+.page-hero { padding: 74px 32px 56px; border-bottom: 1px solid var(--line); background: var(--bg-section); position: relative; overflow: hidden; }
+.page-hero .wrap { position: relative; z-index: 1; }
+.flag-decor-page { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 85%; max-width: 850px; height: auto; opacity: 0.07; z-index: 0; pointer-events: none; }
 .page-hero .eyebrow { margin-bottom: 18px; }
 .page-hero h1 { font-size: clamp(2rem, 4vw, 3rem); max-width: 700px; margin-bottom: 18px; }
 .page-hero p.sub { max-width: 560px; color: var(--text-secondary); font-size: 1.05rem; margin-bottom: 30px; }
